@@ -795,7 +795,7 @@ footer.footer {
 }
 footer.footer:before {
   background: linear-gradient(178deg, #000 4%, transparent),
-    url(images/binary-pattern-tile.045186d6.svg);
+    url(../../Diversion_Dao/icon/footer.svg);
   background-repeat: no-repeat, round;
   bottom: 0;
   content: "";
@@ -4337,7 +4337,7 @@ p {
 }
 .section-contact-us .container .contact-us-content.popupButton {
   background: linear-gradient(
-    0deg,
+    235deg,
     rgba(0, 78, 84, 0.5),
     rgba(0, 78, 84, 0) 100%,
     rgba(0, 78, 84, 0) 0
@@ -5317,7 +5317,22 @@ li.item.left.aos-init.aos-animate {
   .decentralized li img {
     max-width: 100px;
   }
+  .hexagon.binary {
+    display: none;
+  }
+  .tokenomics_fl {
+    flex-direction: column;
+  }
+  .tokenimics_img img {
+    max-width: 300px;
+  }
 }
 .gradient-text.position {
   margin-bottom: 0;
+}
+.tokenomics_fl {
+  margin-top: 60px;
+  display: flex;
+  justify-content: center;
+  gap: 100px;
 }
