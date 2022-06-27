@@ -1,8 +1,8 @@
 @charset "UTF-8";
-/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 html {
   -webkit-text-size-adjust: 100%;
   line-height: 1.15;
+  scroll-behavior: smooth;
 }
 body {
   margin: 0;
@@ -601,20 +601,20 @@ nav.navigation
 }
 nav.navigation .nav-container .links-container .links .item .item-children {
   align-items: flex-start;
-  background: #000;
-  border: 2px solid #073a4d;
-  border-radius: 16px;
+  /* background: #000; */
+  /* border: 2px solid #073a4d; */
+  /* border-radius: 16px; */
   display: flex;
   flex-direction: column;
   max-height: 0;
   opacity: 0;
   overflow: hidden;
-  padding: 0 8px;
+  /* padding: 0 8px; */
   pointer-events: none;
   position: absolute;
-  right: 0;
-  top: 100%;
-  transform: translateY(-20px);
+  right: 10%;
+  top: 40%;
+  /* transform: translateY(-20px); */
   transition: all 0.3s ease;
   visibility: hidden;
 }
@@ -3169,8 +3169,8 @@ p {
   display: flex;
   flex: 1;
   margin-top: 70px;
-  overflow-x: auto;
-  scrollbar-width: none;
+  /* overflow-x: auto;
+  scrollbar-width: none; */
 }
 .section-roadmap .slider::-webkit-scrollbar {
   display: none;
@@ -3182,6 +3182,7 @@ p {
 @media (min-width: 510px) {
   .section-roadmap .slider .slider-inner {
     padding: 0 40px;
+    margin: 0 auto;
   }
 }
 .section-roadmap .slider .slider-inner .roadmap-item {
@@ -5322,9 +5323,24 @@ li.item.left.aos-init.aos-animate {
   }
   .tokenomics_fl {
     flex-direction: column;
+    align-items: center;
   }
   .tokenimics_img img {
     max-width: 300px;
+  }
+  .section-roadmap .slider {
+    overflow-x: auto;
+    scrollbar-width: none;
+  }
+  .tokenomics_info {
+    overflow-x: auto;
+    scrollbar-width: none;
+  }
+  .tokenomics_info {
+    display: none;
+  }
+  .coreimg {
+    width: 358px;
   }
 }
 .gradient-text.position {
@@ -5335,4 +5351,27 @@ li.item.left.aos-init.aos-animate {
   display: flex;
   justify-content: center;
   gap: 100px;
+}
+.item-child {
+  list-style: none;
+  display: none;
+  position: absolute;
+  left: -15%;
+  top: 20px;
+  cursor: pointer;
+}
+.item-ul {
+  list-style: none;
+}
+.item-ul li a {
+  text-decoration: none;
+  color: white;
+}
+.item-ul li {
+  padding: 10px;
+  border: 2px solid #073a4d;
+  transition: all 0.3s ease;
+  border-radius: 16px;
+  margin-bottom: 5px;
+  cursor: pointer;
 }
