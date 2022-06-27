@@ -5366,6 +5366,7 @@ li.item.left.aos-init.aos-animate {
 .item-ul li a {
   text-decoration: none;
   color: white;
+  font-weight: bold;
 }
 .item-ul li {
   padding: 10px;
@@ -5374,4 +5375,5 @@ li.item.left.aos-init.aos-animate {
   border-radius: 16px;
   margin-bottom: 5px;
   cursor: pointer;
+  background: rgba(43, 43, 43, 0.452);
 }
